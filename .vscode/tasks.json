@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "预处理",
+      "dependsOrder": "sequence",
+      "dependsOn": ["unescape", "Remove blank lines", "格式化"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Remove blank lines",
+      "type": "shell",
+      "command": "sed",
+      "args": ["-i", "\"\"", "-r", "\"/^s*$/d\"", "${file}"],
+      "problemMatcher": []
+    },
+    {
+      "label": "unescape",
+      "type": "shell",
+      "command": "sed",
+      "args": ["-i", "\"\"", "s/\\\\\\\\\\\"/\\\"/g", "${file}"],
+      "problemMatcher": []
+    },
+    {
+      "label": "格式化",
+      "type": "shell",
+      "command": "${command:editor.action.formatDocument}",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "粘贴并拆diff",
+      "icon": { "id": "diff", "color": "terminal.ansiGreen" },
+      "type": "shell",
+      "command": "node",
+      "args": ["paste_diff.js"],
+      "problemMatcher": []
+    }
+  ]
+}

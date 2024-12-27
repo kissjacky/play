@@ -1,0 +1,18 @@
+{
+  "delivery_strategy_cmd": {
+    "bid": 10000000,
+    "start_time": "2024-12-27T00:00:00+08:00",
+    "end_time": "2034-12-27T00:00:00+08:00",
+    "schedule_type": 1,
+    "budget": 30000000,
+    "budget_mode": 0,
+    "external_action": 96,
+    "deep_external_action": 326,
+    "deep_bid_type": 1,
+    "flow_control_mode": 1,
+    "qcpx_mode": 2,
+    "roi2_goal": 2.55,
+    "out_break_days": null,
+    "daily_delivery_seconds": null
+  }
+}

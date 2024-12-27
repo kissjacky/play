@@ -1,0 +1,24 @@
+{
+    "ID": "1803353532984394-1813782643400858-2-0-1",
+    "OriVals": {
+        "aggregate_cid": 0,
+        "channel_user_id": "null",
+        "creative_combine_type": "null",
+        "creative_style": "0",
+        "creative_type": 1,
+        "ecp_adv_creative_ids": "null",
+        "group_id": 0,
+        "utm": "null"
+    },
+    "NewVals": {
+        "aggregate_cid": 1813782644041947,
+        "channel_user_id": "\"1702076410028100\"",
+        "creative_combine_type": "1",
+        "creative_style": "1",
+        "creative_type": 2,
+        "ecp_adv_creative_ids": "[]",
+        "group_id": 7429253781860270107,
+        "utm": "{\"utm_source\":\"\",\"utm_campaign\":\"\",\"utm_medium\":\"\",\"utm_content\":\"\",\"utm_term\":\"\"}"
+    },
+    "Fail": false
+}
